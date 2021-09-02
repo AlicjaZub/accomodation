@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <?php require 'partials/layout/head.phtml'; ?>
+
+</head>
+<body>
+<?php require 'partials/layout/header.phtml'; ?>
+<main>
+    <div>
+
+    </div>
+    <div class="hotels">
+        <?php echo \App\ViewHelper\HotelDetailsViewHelper::displayHotels($hotels) ?>
+        <?php require 'partials/modals/bookingModal.phtml'; ?>
+    </div>
+</main>
+<?php require 'partials/layout/footer.phtml'; ?>
+</body>
+</html>
